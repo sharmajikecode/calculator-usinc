@@ -1,0 +1,27 @@
+#include <stdio.h>
+	
+int main(){
+	int x,y;
+	char op;
+
+printf("Enter First Number : ");
+scanf("%d",&x);
+printf("Enter second Number : ");
+scanf("%d",&y);
+printf("Enter Operator (+,-,*,/)");
+scanf(" %c",&op);
+
+if(op == '+'){printf("%d and %d = %d",x,y,(x+y));
+}
+else if(op == '-'){printf("%d and %d = %d",x,y,(x-y));
+}
+else if(op == '*'){printf("%d and %d = %d",x,y,(x*y));
+}
+else if(op == '/'){printf("%d and %d = %d",x,y,(x/y));
+}
+
+else{
+	printf("invalid input");
+}
+return 0;
+}
