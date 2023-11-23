@@ -1,0 +1,38 @@
+#include <stdio.h>
+	
+int main(){
+	int x,y;
+	char op;
+
+printf("Enter First Number : ");
+scanf("%d",&x);
+printf("Enter second Number : ");
+scanf("%d",&y);
+printf("Enter Operator (+,-,*,/)");
+scanf(" %c",&op);
+
+if(op == '+'){
+printf("Addition of %d and %d = %d",x,y,(x+y));
+}
+else if(op == '-'){
+printf("Substraction of %d and %d = %d",x,y,(x-y));
+}
+else if(op == '*'){
+printf("Multiplication of %d and %d = %d",x,y,(x*y));
+}
+else if(op == '/'){
+	
+	if (y == 0)
+	{
+	printf("\n divisor cannot be zero.Please enter the another value.");
+	scanf("%d",&y);
+}
+
+printf("Division of %d and %d = %d",x,y,(x/y));
+}
+
+else{
+	printf("invalid input");
+}
+return 0;
+}
